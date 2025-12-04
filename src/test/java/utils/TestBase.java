@@ -13,9 +13,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class TestBase {
-	
-
-
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Properties loc;
@@ -43,7 +40,6 @@ public class TestBase {
 		}
 	}
 	
-
 	public static void launchApp()  {
 		loadConfig();
     	 driver=new ChromeDriver();
@@ -54,18 +50,9 @@ public class TestBase {
 		System.out.println(prop.getProperty("url"));
 		System.out.println("*************");
 		driver.get(prop.getProperty("url"));
-		
 	}
 	
-	public static void quitBrowser()   {
-		
-   	 	driver.quit();
-		
+	public static void quitBrowser()   {	
+   	 	driver.quit();	
 	}
-	
-	
-
-
-
-
 }
